@@ -6,6 +6,11 @@ function counterchangeplus(){
 
 function counterchangeminus(){
     const counterele = document.getElementById("counter");
-   let counter = parseInt(counterele.innerText);
+    let counter = parseInt(counterele.innerText);
+    if(counter>0){
     counterele.innerText = --counter;
+    }
+    else{
+        alert("number can not be below 0")
+    }
 }
